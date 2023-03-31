@@ -1,0 +1,1284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+ul {
+    margin-bottom: 0rem;
+}
+
+input:focus {
+    outline: none;
+}   
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(76, 76, 76);
+    border-radius: 100px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+
+header .head-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/headerimg1.jpg");
+    background-position: center;
+    background-size: 120%;
+    transition: 0.5s;
+    filter: blur(5px);
+}
+
+header .head-text {
+    top: 40%;
+    /*left: 33%;*/
+    width: 100%;
+    margin-inline: 0 auto;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+}
+
+.head-text h2 {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head-text h1 {
+    color: rgb(0, 30, 255);
+    font-weight: 600;
+}
+
+    .head-text h1 span {
+        color: rgb(255, 30, 0);
+    }
+
+nav {
+    position: fixed !important;
+    top: 0%;
+    z-index: 999;
+    width: 100%;
+    background-color: #e8f4ea;
+    transition: 0.3s;
+}
+
+    nav .kompnav li {
+        list-style: none;
+        padding: 0px 15px;
+    }
+
+        nav .kompnav li > a {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(76, 76, 76);
+            transition: 0.3s;
+        }
+
+        nav .kompnav li:hover a {
+            color: black;
+        }
+
+.loader {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+}
+
+    .loader img {
+        width: 100%;
+    }
+
+.active {
+    animation: Preloader 2s forwards;
+}
+
+@keyframes Preloader {
+    100% {
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+
+.signsearch i {
+    padding: 0px 40px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.signsearch a {
+    color: black;
+}
+
+.signsearch .bi-cart {
+    padding: 0px 5px;
+}
+
+.signsearch span {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#person i {
+    padding: 3px 5px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+#person img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.artan {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(0, 102, 255);
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+}
+
+.sec-1 {
+    background-image: url("Images/slidebackg.jpg");
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    /* opacity: 0.8; */
+    /* filter: blur(3px); */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: fill;
+    }
+
+/* Login Css */
+
+.login-page {
+    background-image: url("Images/headerimg1.jpg");
+    width: 100%;
+    height: 100vh;
+    filter: blur(3px);
+}
+
+.login-box {
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: 0.3s;
+    position: absolute;
+    top: 25%;
+    left: 34%;
+}
+
+.log-text {
+    position: absolute;
+    top: 18%;
+    left: 46%;
+    /* width: 100%; */
+    text-align: center;
+}
+
+.log-text {
+    color: rgb(0, 30, 255);
+    font-weight: 600;
+}
+
+    .log-text span {
+        color: rgb(255, 30, 0);
+    }
+
+.login-box:hover {
+    box-shadow: 0px 0px 20px 2px rgb(0, 102, 255);
+}
+
+.login-box form input {
+    position: relative;
+    padding: 5px 10px;
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login-box form {
+    position: relative;
+}
+
+    .login-box form input:focus {
+        border: 2px solid blue;
+    }
+
+    .login-box form button {
+        width: 50%;
+    }
+
+    .login-box form i {
+        position: absolute;
+        z-index: 1;
+        left: 67%;
+        top: 28%;
+        font-size: 25px;
+    }
+
+.bi-eye-slash {
+    display: none;
+}
+
+.login > h2 {
+    transition: 0.5s;
+}
+
+.qeyekecid span {
+    padding-top: 200px;
+}
+
+.qeyekecid button {
+    width: 24% !important;
+}
+
+.login > h2:hover {
+    transform: scale(1.1);
+}
+
+.qeydiy i {
+    left: 67%;
+    top: 83% !important;
+}
+
+.qeydiy {
+    top: 25%;
+    display: none;
+}
+
+    .qeydiy select {
+        border: 2px solid gray !important;
+    }
+
+.readmore {
+    position: relative;
+    top: 100%;
+    left: 0%;
+    text-align: start;
+    color: black;
+    background-color: white;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+    .readmore a {
+        font-size: 16px;
+    }
+
+.swiper-slide:hover {
+    transform: translateY(-30px);
+}
+
+    .swiper-slide:hover .readmore {
+        position: absolute;
+        top: 87%;
+        height: 68px;
+    }
+
+.dark {
+    width: 24%;
+    height: 3vh;
+    background-color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.person-down {
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    background-color: #e8f4ea;
+    width: 13%;
+    border-radius: 5px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.darkbtn {
+    width: 8%;
+    height: 2vh;
+    background-color: white;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 2%;
+    transition: 0.5s;
+}
+
+.signsearch input {
+    position: absolute;
+    left: 66%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    display: none;
+}
+
+.active1 {
+    left: 16%;
+}
+
+.active2 {
+    padding: 0.5rem 0px;
+    height: 200px;
+}
+
+.active3 {
+    display: block !important;
+}
+
+.map {
+    margin-top: 6%;
+}
+
+    .map iframe {
+        width: 100%;
+        height: 50vh;
+        pointer-events: none;
+    }
+
+.sec-52 {
+    width: 80%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #eff3fa;
+}
+
+.sec-52-inputs input {
+    margin-left: 5%;
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.sec-52-inputs textarea {
+    border: none;
+    padding: 7px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.markalarslide {
+    margin-top: 3%;
+}
+
+.markalartext {
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+    .markalartext p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+.markasl {
+    width: 82.5%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 50;
+}
+
+.marka {
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+
+.markalarslide i {
+    position: absolute;
+    z-index: 51;
+    margin-top: 2.2%;
+    font-size: 25px;
+    padding: 0px 7px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.about-e {
+    margin-top: 10%;
+}
+
+.about-p {
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 200px;
+}
+
+.about-1 i {
+    font-size: 50px;
+    color: orange;
+}
+
+.about-1 h4 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.about-1 p {
+    color: gray;
+}
+
+.about-1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.abouthov {
+    width: 100%;
+    background-color: rgba(0, 94, 255, 0.447);
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 0.4s;
+}
+
+.about-1:hover .abouthov {
+    top: 0%;
+}
+
+.about-2 {
+    padding: 0px 200px;
+}
+
+    .about-2 img {
+        width: 100%;
+    }
+
+.about-2-left {
+    margin-top: 10%;
+    font-size: 19px;
+}
+
+footer {
+    padding-top: 5%;
+    background-color: #18181a;
+    height: 684px;
+    box-shadow: 0px -8px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+    footer hr {
+        background-color: rgb(83, 83, 83);
+        border: none;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+.foot1 {
+    padding: 40px 120px;
+}
+
+.footalt1 {
+    display: flex;
+    flex-direction: column;
+    color: rgb(68, 68, 68);
+}
+
+    .footalt1 a {
+        text-decoration: none;
+        color: rgb(117, 117, 117);
+        transition: 0.5s;
+        line-height: 33px;
+    }
+
+        .footalt1 a:hover {
+            color: white;
+        }
+
+.foot1 > p {
+    color: white;
+    font-size: 33px;
+}
+
+.footr1 .foot1:nth-child(3) .footalt1 p {
+    color: white;
+    font-size: 26px;
+}
+
+    .footr1 .foot1:nth-child(3) .footalt1 p span {
+        color: green;
+        padding-right: 2px;
+    }
+
+.footr1 .foot1:nth-child(3) .footalt1 a {
+    color: red;
+    font-size: 20px;
+}
+
+.footr2 {
+    padding: 40px 120px;
+    justify-content: space-between;
+}
+
+.foot2 {
+    width: 50%;
+}
+
+    .foot2 p {
+        color: white;
+        font-size: 30px;
+    }
+
+    .foot2 input {
+        width: 60%;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+        .foot2 input:focus {
+            outline: none;
+        }
+
+    .foot2 button {
+        background-color: green;
+        color: #fff;
+        margin-left: 1%;
+        width: 20%;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: none;
+    }
+
+.foot3 p {
+    color: white;
+    font-size: 30px;
+}
+
+.foot3 .sosiallar a i::before {
+    font-size: 27px;
+    transition: 0.5s;
+}
+
+.footr3 {
+    background-color: #18181a;
+}
+
+    .footr3 p {
+        text-align: center;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 21px;
+    }
+
+.sosiallar a {
+    padding: 0px 5px;
+}
+
+    .sosiallar a i:hover::before {
+        transform: rotateY(180deg);
+    }
+
+.formelaqe {
+    background-image: url("https://s3.ap-southeast-2.amazonaws.com/www.cryptoknowmics.com/blog/wp-content/uploads/2020/05/01130753/inbound-call-centers.jpg");
+    width: 50%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.formelaqe1 {
+    width: 50%;
+    margin-left: 100%;
+}
+
+/* Place Carousel Css */
+
+.carousel {
+    margin-top: 6%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 645px;
+}
+
+.tedbirdown {
+    position: absolute;
+    z-index: 1001;
+    background-color: #e8f4ea;
+    width: 13%;
+    border-radius: 5px;
+    margin-top: 3.8%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+    .tedbirdown a {
+        color: black;
+    }
+
+.active4 {
+    height: 122px;
+}
+
+.admin-left {
+    background: linear-gradient(93deg, rgba(31, 255, 42, 1) 11%, rgba(135, 255, 133, 1) 100%);
+    height: 745px;
+}
+
+    .admin-left ul li {
+        list-style: none;
+        padding: 7px 11px;
+        font-size: 20px;
+    }
+
+.admin-r1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-left ul li a {
+    color: blue;
+}
+
+.admin-img {
+    text-align: right;
+}
+
+    .admin-img img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    }
+
+.admin-left ul {
+    padding-top: 63px;
+}
+
+.add-user {
+    background-color: #eff3fa;
+}
+
+    .add-user form button {
+        width: 10%;
+    }
+
+    .add-user form input {
+        padding: 7px 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .add-user form select {
+        padding: 7px 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+.user-page {
+    margin-top: 7%;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.user-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.user-about-inputs {
+    /* text-align: start !important; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-input input {
+    width: 50%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.user-about button {
+    border: none;
+    background-color: rgb(0, 89, 255);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 18px;
+}
+
+.bas p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.bas i {
+    font-size: 40px;
+    padding: 0px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.sebetopen {
+    background-color: rgba(39, 39, 39, 0.7);
+    width: 100%;
+    height: 753px;
+    z-index: 300;
+    position: fixed;
+    display: none;
+}
+
+.onay {
+    padding-top: 20px;
+    margin-left: 87.4%;
+}
+
+    .onay button {
+        border: none;
+        background-color: green;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+    .onay:hover button {
+        background-color: white;
+        color: green;
+    }
+
+@keyframes A1 {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.sebetpage {
+    background-color: white;
+    width: 85%;
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin: 12% auto;
+    animation: A1 1s ease-out forwards;
+}
+
+    .sebetpage strong {
+        padding-left: 120px;
+        padding-top: 80px;
+        font-size: 25px;
+    }
+
+.ticket-page {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    background-color: rgb(228, 228, 228);
+}
+
+.ticket-img {
+    width: 100%;
+}
+
+    .ticket-img img {
+        width: 80%;
+        height: 500px;
+        margin-left: 10%;
+        border-radius: 20px;
+        object-fit: fill;
+    }
+
+.measure-about {
+    padding: 0px 150px;
+    justify-content: space-between;
+}
+
+.measure-ab {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+    .measure-ab i {
+        font-size: 40px;
+    }
+
+    .measure-ab:hover {
+        box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.75) inset;
+    }
+
+.ticket-shop {
+    width: 30%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    /*box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.75);*/
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.ticket-shop-1 span {
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.ticket-shop-1 b {
+    font-size: 40px;
+    color: rgb(0, 102, 255);
+}
+
+.ticket-shop button {
+    border: none;
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.ticket-shop:hover {
+    box-shadow: 0px 0px 23px -7px rgba(0, 0, 0, 0.75) inset;
+}
+
+.ticket-shop > p {
+    font-size: 20px;
+}
+
+.measure-page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+    .measure-page > div {
+    justify-content: space-between;
+        border: 1px solid black;
+    }
+
+    .measure-page a {
+        padding: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: auto;
+    }
+
+.measure img {
+    width: 100%;
+    height: 250px;
+}
+
+.measure-name {
+    text-align: center;
+}
+
+.measure-pl-dat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.measure div {
+    line-height: 30px;
+}
+
+.measure-pl-dat span:nth-child(1) {
+    color: red !important;
+}
+
+.measure-pl-dat span:nth-child(2) {
+    color: blue !important;
+}
+
+.mehsullar {
+    margin-top: 1%;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 0px 30px;
+}
+
+.malmelumat {
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+    .malmelumat p:nth-child(2) {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .malmelumat p:nth-child(3) {
+        background-color: rgba(246, 134, 31, .07);
+        color: #f6861f;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .malmelumat p:nth-child(4) {
+        background-color: rgba(23, 67, 223, .07);
+        color: #1743df;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+.sebetpage strong {
+    padding-left: 120px;
+    padding-top: 80px;
+    font-size: 25px;
+}
+
+.qiymethes {
+    height: 58px;
+    margin-top: 6%;
+    margin-left: 10%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid rgb(185, 185, 185);
+}
+
+    .qiymethes p {
+        padding: 0px 40px;
+        font-size: 23px;
+    }
+
+    .qiymethes a {
+        text-decoration: none;
+        color: black;
+        font-size: 23px;
+    }
+
+.mehsullar i {
+    font-size: 30px;
+    margin-left: 12%;
+    margin-top: 6%;
+    height: 60px;
+    padding: 10px 13px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.onay {
+    /*padding-top: 20px;*/
+    /*margin-left: 87.4%;*/
+}
+
+    .onay button {
+        border: none;
+        background-color: green;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+    .onay:hover button {
+        background-color: white;
+        color: green;
+    }
+
+.buy2page {
+    position: fixed;
+    background: linear-gradient(93deg, rgba(147, 147, 147, 0.9110994739692753) 100%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    z-index: 999999999;
+    top: 0;
+    height: 745px;
+    display: none;
+}
+
+.buy2page-1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.buy2page-icon i {
+    font-size: 120px;
+    color: green;
+}
+
+.buy-page-buttons {
+    width: 17%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .bi-list {
+    font-size: 35px;
+    color: black;
+    display: none;
+}
+
+nav .bi-x-lg {
+    font-size: 35px;
+    color: black;
+    display: none;
+}
+
+.resnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1000;
+    /* top: 10%; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30, 30, 30);
+    width: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+    .resnav ul {
+        list-style: none;
+        padding-top: 20px;
+    }
+
+        .resnav ul li {
+            font-size: 23px;
+            line-height: 50px;
+        }
+
+            .resnav ul li a {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+.tedbirresdown {
+    height: 0vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+    .tedbirresdown a {
+        line-height: 35px;
+        font-size: 18px;
+        color: rgb(0, 110, 255);
+    }
+
+.active5 {
+    height: 27vh;
+}
+
+@media(max-width:768px) {
+    .login-box {
+        left: 0%;
+    }
+
+        .login-box i {
+            left: 65% !important;
+        }
+
+    .head-img {
+        height: 80vh !important;
+    }
+
+    .log-text {
+        top: 18%;
+        left: 36%;
+        font-size: 30px;
+    }
+
+    nav .kompnav {
+        display: none;
+    }
+
+    .marka {
+        width: 82.5% !important;
+    }
+
+    .markalarslide i {
+        margin-top: 10%;
+    }
+
+    .markasl {
+        margin: 0;
+        width: 100%;
+    }
+
+    .markalarslide i:nth-child(3) {
+        margin-left: 88% !important;
+    }
+
+    .foot1 {
+        padding: 20px;
+    }
+
+    footer {
+        height: 1201px;
+    }
+
+    .footr2 {
+        padding: 20px;
+    }
+
+    .foot2 {
+        width: 100%;
+    }
+
+        .foot2 input {
+            width: 100%;
+        }
+
+        .foot2 button {
+            width: 100%;
+            margin-left: 0%;
+            margin-top: 3%;
+        }
+
+    .foot3 {
+        padding: 20px 0px;
+    }
+
+    .ticket-img img {
+        width: 100%;
+        width: 100%;
+        margin-left: 0%;
+        border-radius: 0px;
+        height: 300px;
+    }
+
+    .measure-ab {
+        margin: 0 auto;
+    }
+
+    .measure-about {
+        padding: 0px;
+    }
+
+    .ticket-shop {
+        width: 91%;
+    }
+
+    .head-text {
+        top: 35% !important;
+    }
+
+    .signsearch {
+        display: none;
+    }
+
+    nav .bi-list {
+        display: block;
+    }
+
+    .resnav {
+        display: block !important;
+    }
+
+    .about-p {
+        padding: 0px;
+    }
+
+    .about-1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-2 {
+        padding: 0px;
+    }
+
+    .sec-52-inputs input {
+        margin-left: 0%;
+        margin-top: 7%;
+    }
+
+    .user-page {
+        margin-top: 40%;
+    }
+
+    .user-input input {
+        width: 100%;
+    }
+
+    .user-about button {
+        width: 50%;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .login-box {
+        left: 0% !important;
+    }
+
+    .sec-52-inputs input {
+        margin-left: 0%;
+        margin-top: 7%;
+    }
+}

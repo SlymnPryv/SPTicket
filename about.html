@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="SPTicket, spticket, sp ticket, SP Ticket">
+    <meta name="description" content="bilet satisi, bilet satışı">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP Ticket</title>
+    <link rel="icon" type="image/png" href="Images/spticket.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <div class="artan"></div> -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="Images/spticket.png" alt="SP Ticket" style="width: 60%;"></a>
+            </div>
+
+            <ul class="d-lg-flex col-md-3 kompnav">
+                <li id="tedbir"><a class="text-decoration-none" href="#">Tədbirlər</a>
+                </li>
+                <div class="tedbirdown">
+                    <a class="text-decoration-none ps-2" href="#">Konsert</a> <br>
+                    <a class="text-decoration-none ps-2" href="#">İdman</a> <br>
+                    <a class="text-decoration-none ps-2" href="#">Uşaqlar</a> <br>
+                    <a class="text-decoration-none ps-2" href="#">Muzeylər</a> <br>
+                    <a class="text-decoration-none ps-2" href="#">Tamaşalar</a>
+                </div>
+                <li><a class="text-decoration-none" href="place.html">Məkanlar</a></li>
+                <li><a class="text-decoration-none" href="about.html">Haqqımızda</a></li>
+                <li><a class="text-decoration-none" href="contact.html">Əlaqə</a></li>
+            </ul>
+
+            <div class="resnav">
+                <ul>
+                    <li><a class="text-decoration-none resteddown" href="#">Tədbirlər <i class="bi bi-plus"></i></a>
+                    </li>
+                    <div class="tedbirresdown">
+                        <a class="text-decoration-none ps-2" href="#">Konsert</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">İdman</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">Uşaqlar</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">Muzeylər</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">Tamaşalar</a>
+                    </div>
+                    <li><a class="text-decoration-none" href="#">Məkanlar</a></li>
+                    <li><a class="text-decoration-none" href="#">Haqqımızda</a></li>
+                    <li><a class="text-decoration-none" href="#">Əlaqə</a></li>
+                </ul>
+            </div>
+
+            <div class="signsearch d-lg-flex">
+                <input type="search" class="mt-1">
+                <i class="bi bi-search"></i>
+                <span class="pe-5"><i class="bi bi-cart"></i>(0)</span>
+                <a id="person" href="#">
+                    <img src="Images/admin.png" alt="Admin">
+                    <!-- <i class="bi bi-person"></i> -->
+                    <div class="person-down mt-1">
+                        <a class="text-decoration-none ps-2" href="user.html">Profil</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">Sifarişlərim</a> <br>
+                        <a class="text-decoration-none ps-2" href="#">Şifrəni Yenilə</a> <br>
+                        <hr>
+                        <div class="dark ms-2">
+                            <div class="darkbtn ms-1"></div>
+                        </div>
+                        <hr>
+                        <a class="text-decoration-none ps-2" href="#">Çıxış</a>
+                    </div>
+                </a>
+            </div>
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x-lg"></i>
+        </div>
+    </nav>
+
+    <div class="about-e d-block">
+        <h2 class="text-center">Niyə Biz?</h2>
+        <div class="about-p d-lg-flex pt-5">
+            <div class="about-1 col-md-3">
+                <div class="abouthov"></div>
+                <i class="bi bi-clock"></i>
+                <h4 class="pt-2">24/7 Xidmət</h4>
+                <p class="pt-2">Əməkdaşlarımız sizlərə 24/7 xidmət göstərməyə hazırdır</p>
+            </div>
+
+            <div class="about-1 col-md-3">
+                <div class="abouthov"></div>
+                <i class="bi bi-currency-dollar"></i>
+                <h4 class="pt-2">Sərfəli Qiymət</h4>
+                <p class="pt-2">Siz SP Ticket vasitəsilə istənilən tədbirə ucuz bilet tapa bilərsiniz</p>
+            </div>
+
+            <div class="about-1 col-md-3">
+                <div class="abouthov"></div>
+                <i class="bi bi-shield-check"></i>
+                <h4 class="pt-2">Güvənli Ödəmə</h4>
+                <p class="pt-2">Ödənişlərinizi etibarlı ödəniş sistemi vasitəsilə güvənli şəkildə həyata keçirə
+                    bilərsiniz</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-2 d-lg-flex mt-5">
+        <div class="about-2-left col-md-6">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, non dignissimos hic dolorem nulla iste optio ad asperiores quia tenetur blanditiis consequuntur autem voluptatibus quae quidem nam quo libero quisquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ipsum sunt voluptates consequuntur quos laudantium quia ab, necessitatibus est iusto doloribus libero similique cumque maxime, corporis at, voluptatibus possimus qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem explicabo dolorem sed minus impedit dignissimos sequi excepturi ea? Totam atque debitis, nostrum a repudiandae modi dicta cupiditate inventore officia non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate saepe ipsa possimus asperiores sed fugit, in ab. Accusamus, molestiae? Atque quod laboriosam distinctio libero ad reiciendis animi error dicta reprehenderit!</p>
+        </div>
+
+        <div class="about-2-right col-md-6">
+            <img src="Images/about1.jpg" alt="About">
+        </div>
+    </div>
+
+    <div class="markalarslide mb-5">
+        <div class="markalartext text-center">
+            <p>Partnyorlar</p>
+        </div>
+
+        <i class="partnyorsol bi bi-arrow-left-short ms-lg-5"></i>
+        <i style="margin-left: 95%;" class="partnyorsag bi bi-arrow-right-short"></i>
+        <div class="markasl d-flex">
+            <div class="marka">
+                <a href="https://www.bosch.com/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/bosch.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.tefal.ru/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/tefal.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.samsung.com/az/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/samsung.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a
+                    href="https://www.acer.com/ac/en/US/content/home#_ga=2.212127255.244098598.1647126035-263916589.1647126034">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/acer.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.apple.com/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/Apple.jpg">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.asus.com/us/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/asus.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.hp.com/us-en/home.html">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/hp.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.sony.com/en/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/sony.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.nokia.com/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/nokia.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.canon-europe.com/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/canon.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.lg.com/us">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/lg.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.lenovo.com/us/en/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/lenovo.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://consumer.huawei.com/az/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/huawei.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.mi.com/global/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/mi.png">
+                </a>
+            </div>
+
+            <div class="marka">
+                <a href="https://www.usa.philips.com/">
+                    <img src="https://www.bakuelectronics.az/assets/images/Logo/philips.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footr1 d-lg-flex">
+            <div class="foot1">
+                <p>Şirkət</p>
+                <div class="footalt1">
+                    <a href="Haqqimizda.html">Haqqımızda</a>
+                    <a href="#">Vakansiyalar</a>
+                    <a href="#">Mağazalar</a>
+                    <a href="#">Kompaniyalar</a>
+                    <a href="#">Şirkətin Xəbərləri</a>
+                    <a href="#">Gizlilik Sİyasəti</a>
+                </div>
+            </div>
+
+            <div class="foot1">
+                <p>Müştərilər üçün</p>
+                <div class="footalt1">
+                    <a href="#">Kredit Ödənişləri</a>
+                    <a href="#">İstifadə Qaydaları</a>
+                    <a href="#">Tez-tez verilən suallar</a>
+                </div>
+            </div>
+
+            <div class="foot1">
+                <p>Əlaqə</p>
+                <div class="footalt1">
+                    <p><span>(012)</span> 477-91-72</p>
+                    <a
+                        href="https://www.google.com/maps/search/irsad+electronics/@40.3972597,49.8585702,12.74z">Xəritədəyik</a>
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 2px;">
+
+        <div class="footr2 d-lg-flex">
+            <div class="foot2">
+                <p>Abunə Olun</p>
+                <input type="text" placeholder="E-mail">
+                <button>Abunə olmaq</button>
+            </div>
+
+            <div class="foot3">
+                <p>Biz Sosial Şəbəkələrdə</p>
+                <div class="sosiallar">
+                    <a style="color: rgb(0, 47, 255); padding-left: 0px;" href="https://www.facebook.com/"><i
+                            class="bi bi-facebook"></i></a>
+                    <a style="color: rgb(255, 0, 106);" href="https://www.instagram.com/piriyev.517/"><i
+                            class="bi bi-instagram"></i></a>
+                    <a style="color: green;"
+                        href="https://api.whatsapp.com/send/?phone=%2B994504019645&text&app_absent=0"><i
+                            class="bi bi-whatsapp"></i></a>
+                    <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                    <a style="color: red;" href="https://www.youtube.com/user/irshadel"><i
+                            class="bi bi-youtube"></i></a>
+                </div>
+
+                <p style="font-size: 25px; padding-top: 10px;">Ödəniş Sistemləri</p>
+                <div class="master">
+                    <img src="https://kontakt.az/svg/visa.svg" alt="">
+                    <img src="https://kontakt.az/svg/mc.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <hr style="height: 2px;">
+
+        <div class="footr3">
+            <p>© Site By SPStudio - 2022</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
