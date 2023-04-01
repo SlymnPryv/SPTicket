@@ -1,3 +1,13 @@
+$(".bi-list").click(function () {
+        $(this).hide()
+        $(".bi-x-lg").show()
+        $(".resnav").css("width", "100%")
+    })
+    $(".bi-x-lg").click(function () {
+        $(this).hide()
+        $(".bi-list").show()
+        $(".resnav").css("width", "0%")
+    })
 window.addEventListener('scroll', scroll)
 
 var loader = document.querySelector('.loader')
@@ -133,16 +143,6 @@ $(document).ready(function () {
         if ($(this).val().length == 9 || $(this).val().length == 13 || $(this).val().length == 16) {
             $(this).val($(this).val() + "-")
         }
-    })
-    $(".bi-list").click(function () {
-        $(this).hide()
-        $(".bi-x-lg").show()
-        $(".resnav").css("width", "100%")
-    })
-    $(".bi-x-lg").click(function () {
-        $(this).hide()
-        $(".bi-list").show()
-        $(".resnav").css("width", "0%")
     })
 })
 
